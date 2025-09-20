@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Portforlio from './Portforlio.tsx';
-import Projects from "./Projects.tsx";
+import Portforlio from './pages/Portforlio.tsx';
+import Projects from "./pages/Projects.tsx";
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import "./projects.css";
-import images from "./constant/images";
+import "../projects.css";
+
 
 interface Project {
     title: string;
