@@ -3,7 +3,7 @@ import { Link} from "react-router-dom";
 import '../index.css'
 import images from "../constant/images.js";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
-import { SiDotnet, SiJavascript } from "react-icons/si";
+import { SiDotnet, SiJavascript, SiPostgresql} from "react-icons/si";
 import { FcBusinessContact } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";
 import { FaAndroid, FaCss3, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaDocker, FaGithub } from "react-icons/fa";
@@ -51,6 +51,43 @@ function Portforlio() {
                     </div>
                 </div>
             </div>
+            {/* certificates */}
+            <div className="certificates-section">
+                <h2 className="section-title">Certificates & Achievements</h2>
+                <div className="certificates-grid">
+                    <div className="certificate-card">
+                        <img src={images.compTIA} alt="CompTIA Security+" className="certificate-image" />
+                        <p>CompTIA Security+ CE Certification</p>
+                        <a href="/certificates/CompTIA Security+ ce certificate.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
+                            View / Download
+                        </a>
+                    </div>
+
+                    <div className="certificate-card">      
+                        <img src={images.IBM} alt="IBM CC0101EN" className="certificate-image" />
+                        <p>IBM CC0101EN Certificate - IBM SkillsBuild</p>
+                        <a href="/certificates/IBMCC0101EN.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
+                            View / Download
+                        </a>
+                    </div>
+
+                    <div className="certificate-card">                    
+                        <img src={images.IBM} alt="IBM CC0201EN" className="certificate-image" />
+                        <p>IBM CC0201EN Certificate - IBM SkillsBuild</p>
+                        <a href="/certificates/IBMCC0201EN.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
+                            View / Download
+                        </a>
+                    </div>
+                    <div className="certificate-card">                     
+                        <img src={images.hackathon} alt="Hackathon" className="certificate-image" />
+                        <p>Hackathon Winner / Participant</p>
+                        <a href="/certificates/hackathon2023.pdf" target="_blank" rel="noopener noreferrer" className="certificate-link">
+                            View / Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 
             {/* My Tech Stack or skill section */}
             <div className="skills-section">
@@ -97,7 +134,7 @@ function Portforlio() {
                                 <span className="icon-name">Python</span>
                             </div>
                             <div className="icon-wrapper">
-                                <SiDotnet className="icon text-purple-600" />
+                                <SiDotnet className="icon dotnet text-purple-600" />
                                 <span className="icon-name">ASP.NET</span>
                             </div>
                             <div className="icon-wrapper">
@@ -116,8 +153,9 @@ function Portforlio() {
                                 <span className="icon-name">Firebase</span>
                             </div>
                             <div className="icon-wrapper">
-                                <img src={images.SQL} alt="MySQL" className="icon database" />
-                                <span className="icon-name">MySQL</span>
+                                {/* <img src={images.SQL} alt="MySQL" className="icon database" /> */}
+                                <SiPostgresql className="icon sql text-blue-500" />
+                                <span className="icon-name">PostgreSQL</span>
                             </div>
                         </div>
                         <h3>Database Management</h3>
